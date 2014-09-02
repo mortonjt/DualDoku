@@ -15,10 +15,7 @@ public class DualDoku extends Activity
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        
-        puzzle = new PuzzleView(this); 
-		setContentView(puzzle); 
-		puzzle.requestFocus();	
-		
+        Intent intent = new Intent(this, Game.class); 
+    	startActivity(intent);
     }
 }
